@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Homologation</title>
+</head>
+<body>     <!--onload="init();"onload="init1();"-->
+    <!--navabar-->
+    <nav class="navbar navbar-expand-sm  justify-content-center">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+          </div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Produits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="demande.html">Demandes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacts</a>
+          </li>
+          
+        </ul>
+      </nav>
+      
+        
+      
+        <!--modal section--> 
+        <section class="section1">
+          <p>Cliquer ici! pour ajouter un produit</p>
+        <button  type="button"  id="entry1" class="btn"  >Ajouter</button>
+        </section>
+        <div class="bg-modal">
+           <div class="modal-content">
+            <!--formulaire inside the popup-->
+            <div class="close">+</div>
+            <form class="form" id="form">
+                  <div class="container">
+                  <label for="nom">Nom</label>
+                  <input type="text"  id="nom" placeholder="entrer le nom">
+                  <i class="fa-solid fa-exclamation-circle"></i>
+                  <i class="fa-solid fa-check-circle"></i>
+                 
+                  </div>
+                  
+                  
+                 <div class="container">
+                  <label for="marque">Marque</label>  
+                  <input type="text"  id="marque" placeholder="entrer la marque" >
+                  <i class="fa-solid fa-exclamation-circle"></i>
+                  <i class="fa-solid fa-check-circle"></i>
+                  
+                 
+
+                 </div>
+                
+                  <div class="container">
+                    <label for="modele">modele</label>
+                    <input type="text"  id="modele" placeholder="entrer le modéle">
+                    <i class="fa-solid fa-exclamation-circle"></i>
+                    <i class="fa-solid fa-check-circle"></i>
+                   
+                    
+                  </div>
+                
+                      <div class="form-check container" id="check" >
+                     
+                            <label for="type">Type</label>
+                            <input type="checkbox" value="CE">CE 
+                            <input type="checkbox" value="MDF">MDF
+                            <input type="checkbox" value="CEF">CEF
+                     </div>
+                     
+                  
+                    <div class="container">
+                        <label for="version">Version</label>
+                        <input type="text"  id="version" placeholder="donner la version">
+                        <i class="fa-solid fa-exclamation-circle"></i>
+                        <i class="fa-solid fa-check-circle"></i>
+                        
+                        
+                    </div>
+                    
+                   
+                    <div class="container">
+                        <label for="ref">Rcertificat</label>
+                        <input type="text " id="ref" placeholder="donner le ref">
+                        <i class="fa-solid fa-exclamation-circle"></i>
+                        <i class="fa-solid fa-check-circle"></i>
+                    </div>
+                    
+                  
+ 
+              <button type="submit"  id="entry" class="btn">Submit</input> 
+                   
+                  </form>
+           </div>
+        </div>
+        
+
+<!--update popup-->
+<div class="bg-modal1">
+  <div class="modal-content1">
+   <!--formulaire inside the popup-->
+   <div class="close2">+</div>
+   <form class="form" id="form">
+         <div class="container">
+         <label for="nom">Nom</label>
+         <input type="text"  id="nom1" placeholder="entrer le nom">
+        
+         </div>
+         
+         
+        <div class="container">
+         <label for="marque">Marque</label>  
+         <input type="text"  id="marque1" placeholder="entrer la marque" >
+      
+        </div>
+       
+         <div class="container">
+           <label for="modele">modele</label>
+           <input type="text"  id="modele1" placeholder="entrer le modéle">
+          
+           
+         </div>
+       
+             <div class="form-check container" id="check1" >
+            
+                   <label for="type">Type</label>
+                   <input type="checkbox" value="CE" id="ce">CE 
+                   <input type="checkbox" value="MDF" id="mdf">MDF
+                   <input type="checkbox" value="CEF" id="cef">CEF
+            </div>
+            
+         
+           <div class="container">
+               <label for="version">Version</label>
+               <input type="text"  id="version1" placeholder="donner la version" >
+               
+               
+           </div>
+           
+          
+           <div class="container">
+               <label for="ref">Rcertificat</label>
+               <input type="text " id="ref1" placeholder="donner le ref" >
+           </div>
+           
+         
+
+     <button type="submit"  id="entryUp" class="btn">Modifier</button></input> <!--onclick="OnEdit();"-->
+          
+         </form>
+  </div>
+</div>
+
+
+
+<!------------------------------------------------------------------------------------------------------------->
+
+
+        <section class="section2">
+          <table class="table table-striped" id="storelist">
+            <thead>
+              <tr>
+                <th>Nom</th>
+                <th>Marque</th>
+                <th>Model</th>
+                <th>Type</th> 
+                <th>Version</th>
+                <th>Ref certificat</th>
+                <th>Etat</th>
+                <th>Homologuer</th>
+                <th>Actions</th>
+                
+              </tr>
+            </thead>
+            <tbody></tbody>
+            
+              
+              
+            
+          </table>
+        </section>
+     
+        
+      </div>
+    
+     <div class="modal1">
+        <div class="modal1-content">
+            <div class="close1">+</div>
+              <div class="title"> <h2>Validation du produit</h2></div> 
+              
+             <form  id="form1">
+              
+               <h3>Etat:</h3>    
+               <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="valid" value="valide">
+                <label class="form-check-label" for="flexRadioDefault1">
+                 valide
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="invalid"  value="invalide" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  invalide
+                </label>
+              </div>
+              </form>   
+               <button type="submit" class="btn" id="entry2">confirmer</button>  
+        </div>
+      </div>
+      
+    
+     
+     
+ <script src="script.js">
+    
+    </script>
+    
+</body>
+</html>

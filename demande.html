@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Homologation</title>
+    
+</head>
+<body>     <!--onload="init();"onload="init1();"-->
+    <!--navabar-->
+    <nav class="navbar navbar-expand-sm  justify-content-center">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+          </div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Produits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="demande.html">Demandes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacts</a>
+          </li>
+          
+        </ul>
+      </nav>
+<!--formulaire du demande d'homologation-->
+      <section class="section3">
+           <h2>Demande d'homologation du Produits</h2>
+
+           <form action="">
+            <div class="container1">
+              <label for="email" class="form-label">Nom:</label>
+              <input type="text" id="nom" placeholder="Enter nom" name="nom">
+            </div>
+           
+              <div class="container1">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" placeholder="Enter email" name="email">
+              </div>
+              
+            
+              <div class="container1">
+                <label for="tel" class="form-label">Tel:</label>
+                <input type="text" id="tel" placeholder="Enter Tel" name="tel">
+              
+              </div>
+              
+              <div class="container1">
+                <label for="ref" class="form-label">Ref:</label>
+                <input type="text" id="ref" placeholder="Enter ref" name="ref">
+              
+              </div>
+            <button type="submit" class="btn1" id="submit">Submit</button>
+          </form>
+      </section>
+
+
+
+      
+      <section class="section2">
+        <table class="table table-striped" id="storelist">
+          <thead>
+            <tr>
+              <th>Nom</th>
+              <th>Email</th>
+              <th>Tel</th>
+              <th>Ref du produit</th> 
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+
+      <script src="demande.js">
+    
+      </script>
+      
+  </body>
+  </html>     
